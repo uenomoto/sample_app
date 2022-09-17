@@ -10,6 +10,10 @@
 
 <%= f.text_area :body %>
 
+<h4>画像</h4>
+<%= f.file_field :image, accept: "image/*" %>
+
+
 <%= f.submit "保存" %>
 
 <% end %>
