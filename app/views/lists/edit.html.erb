@@ -1,19 +1,25 @@
-<h1>編集画面</h1>
+<div class="edit-main">
+ <h1>編集画面</h1>
 
-<%= form_with model: @list, url:list_path(@list.id), method: :patch do |f| %>
+ <%= form_with model: @list, url:list_path(@list.id), method: :patch do |f| %>
 
-<h4>タイトル</h4>
+<div class="edit-title">
+ <h4>タイトル</h4>
+ <%= f.text_field :title %>
+</div>
 
-<%= f.text_field :title %>
+<div class="edit-body">
+ <h4>本文</h4>
+ <%= f.text_area :body %>
+</div>
 
-<h4>本文</h4>
+<div class="edit-image">
+ <h4>画像</h4>
+ <%= f.file_field :image, accept: "image/*" %>
+</div>
 
-<%= f.text_area :body %>
-
-<h4>画像</h4>
-<%= f.file_field :image, accept: "image/*" %>
-
-
-<%= f.submit "保存" %>
-
+<div class="edit-submit">
+ <%= f.submit "保存" %>
+</div>
 <% end %>
+</div>

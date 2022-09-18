@@ -135,6 +135,7 @@ footer h3 {
 }
 .new-title input {
   font-size: 25px;
+  padding: 0 30px;
 }
 .new-body textarea {
   font-size: 30px;
@@ -170,4 +171,41 @@ footer h3 {
 }
 .show-link a:hover {
   background-color: red;
+}
+.show-link a:active {
+  background-color: cyan;
+}
+
+.edit-main {
+  text-align: center;
+}
+.edit-main h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.edit-title {
+  font-size: 30px;
+  margin: 30px 0;
+}
+.edit-title input {
+  font-size: 25px;
+  padding: 0 30px;
+}
+.edit-body {
+  font-size: 30px;
+  margin: 30px 0;
+}
+.edit-body textarea {
+  font-size: 30px;
+}
+.edit-image {
+  font-size: 30px;
+  margin: 30px 0;
+}
+.edit-image input{
+  font-size: 30px;
+  margin-bottom: 140px;
+}
+.edit-submit input {
+ padding: 10px 50px;
 }
