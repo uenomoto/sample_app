@@ -146,3 +146,28 @@ footer h3 {
 .new-submit input {
   padding: 10px 50px;
 }
+.show-list {
+  text-align: center;
+}
+.show-title {
+  padding-bottom: 30px;
+}
+.show-body {
+  padding-bottom: 30px;
+}
+.show-image {
+  margin-bottom: 50px;
+}
+.show-link {
+  font-size: 30px;
+}
+.show-link a{
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  margin: 0 30px;
+  border-radius: 5px;
+  color: white;
+}
+.show-link a:hover {
+  background-color: red;
+}
