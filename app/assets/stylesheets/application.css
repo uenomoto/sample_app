@@ -209,3 +209,39 @@ footer h3 {
 .edit-submit input {
  padding: 10px 50px;
 }
+
+.top-main {
+  text-align: center;
+}
+.top-image {
+  background-image: url(kirei);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.top-image h1{
+  color: white;
+  padding-top: 120px;
+  font-size: 50px;
+}
+.self {
+  font-size: 40px;
+  color: cyan;
+}
+.self-introduction {
+  margin: 45px 0;
+  color: #ba55d3;
+}
+.self-introduction li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.enthusiasm {
+  font-size: 30px;
+  color: red;
+}
+.bottom-image {
+  background-image: url(jiko);
+  background-size: contain;
+  background-position: center;
+}
