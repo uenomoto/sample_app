@@ -1,4 +1,6 @@
+<div class="new-list">
 <h1>新規登録</h1>
+<div class="error-box">
 <% if @list.errors.any? %>
   <%= @list.errors.count %>件のエラーが発生しました
   <ul>
@@ -7,16 +9,26 @@
     <% end %>
   </ul>
 <% end %>
+</div>
 
 <%= form_with model: @list, url: "/lists",method: :post do |f| %>
-<h4>タイトル</h4>
-<%= f.text_field :title %>
 
-<h4>本文</h4>
-<%= f.text_area :body %>
+<div class="new-title">
+ <h4>タイトル</h4>
+ <%= f.text_field :title %>
+</div>
 
-<h4>画像</h4>
-<%= f.file_field :image, accept: "image/*" %>
+<div class="new-body">
+  <h4>本文</h4>
+  <%= f.text_area :body %>
+</div>
 
-<%= f.submit "投稿" %>
-<% end %>
+<div class="new-image">
+ <h4>画像</h4>
+ <%= f.file_field :image, accept: "image/*" %>
+</div>
+<div class="new-submit">
+ <%= f.submit "投稿" %>
+</div>
+ <% end %>
+</div>
