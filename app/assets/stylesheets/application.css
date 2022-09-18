@@ -22,8 +22,8 @@ a {
   text-decoration: none;
 }
 
-header, h1, nav, .list-comment {
-  font-family: 'Kaushan', cursive, sans-serif;
+header, h1, nav, .list-comment{
+  font-family: serif;
 }
 
 header {
@@ -62,7 +62,7 @@ nav {
 main {
   width: 880px;
   margin: 0 auto;
-  height: 790px;
+  height: 100vh;
   background-color: oldlace;
 }
 
@@ -231,6 +231,7 @@ footer h3 {
 .self-introduction {
   margin: 45px 0;
   color: #ba55d3;
+  font-size: 30px;
 }
 .self-introduction li {
   list-style: none;
