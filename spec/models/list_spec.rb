@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'rails_helper'
+require "rails_helper"
 
-describe 'モデルテスト' do
+describe "モデルテスト" do
   it "有効な投稿内容の場合は保存されるか" do
     expect(FactoryBot.build(:list)).to be_valid
   end
