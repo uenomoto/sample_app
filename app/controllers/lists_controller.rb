@@ -6,10 +6,10 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     if @list.save
-    flash[:notice] = "投稿が成功しました!!"
-    redirect_to list_path(@list.id)
+      flash[:notice] = "投稿が成功しました!!"
+      redirect_to list_path(@list.id)
     else
-    render :new
+      render :new
     end
   end
 
@@ -40,7 +40,7 @@ class ListsController < ApplicationController
   end
 
   private
-  def list_params
-    params.require(:list).permit(:title,:body,:image)
-  end
+    def list_params
+      params.require(:list).permit(:title, :body, :image)
+    end
 end
