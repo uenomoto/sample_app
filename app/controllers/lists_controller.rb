@@ -14,6 +14,7 @@ class ListsController < ApplicationController
   end
 
   def index
+     puts "作成したキー #{ENV['BIRTHDAY_KEY']}"
     @lists = List.all
   end
 
